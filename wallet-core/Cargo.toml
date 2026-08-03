@@ -1,0 +1,21 @@
+[package]
+name = "wallet-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[features]
+default = ["mainnet"]
+mainnet = ["paqus/mainnet"]
+testnet = ["paqus/testnet"]
+devnet = ["paqus/devnet"]
+sqisign-blockchain-test = ["paqus/sqisign-blockchain-test"]
+
+[dependencies]
+bip39.workspace = true
+getrandom.workspace = true
+hex.workspace = true
+paqus.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+zeroize.workspace = true

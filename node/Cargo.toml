@@ -1,0 +1,43 @@
+[package]
+name = "paqus-node"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+build = "build.rs"
+
+[[bin]]
+name = "paqus-node"
+path = "src/main.rs"
+
+[features]
+default = ["mainnet"]
+mainnet = ["paqus/mainnet", "paqus-app-config/mainnet"]
+testnet = ["paqus/testnet", "paqus-app-config/testnet"]
+devnet = ["paqus/devnet", "paqus-app-config/devnet"]
+sqisign-blockchain-test = ["paqus/sqisign-blockchain-test"]
+
+[dependencies]
+axum.workspace = true
+axum-server.workspace = true
+borsh.workspace = true
+ctrlc.workspace = true
+futures-util.workspace = true
+hex.workspace = true
+igd-next.workspace = true
+lmdb.workspace = true
+paqus.workspace = true
+paqus-app-config.workspace = true
+prost.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+socket2.workspace = true
+tokio.workspace = true
+tonic.workspace = true
+tonic-prost.workspace = true
+tower.workspace = true
+tower-http.workspace = true
+zeroize.workspace = true
+
+[build-dependencies]
+protoc-bin-vendored.workspace = true
+tonic-prost-build.workspace = true

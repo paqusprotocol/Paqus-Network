@@ -1,0 +1,13 @@
+/target/
+/node/target/
+/wallet-cli/target/
+/node/data/
+/data/
+/wallet-cli/cash/
+/cash/
+/wallet-cli/wallet.json
+/wallet.json
+/imported.json
+*.log
+*.pid
+*.XPQ

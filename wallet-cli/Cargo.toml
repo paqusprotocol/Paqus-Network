@@ -1,0 +1,28 @@
+[package]
+name = "wallet-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "wallet-cli"
+path = "src/main.rs"
+
+[features]
+default = ["mainnet"]
+mainnet = ["paqus/mainnet", "paqus-app-config/mainnet", "wallet-core/mainnet"]
+testnet = ["paqus/testnet", "paqus-app-config/testnet", "wallet-core/testnet"]
+devnet = ["paqus/devnet", "paqus-app-config/devnet", "wallet-core/devnet"]
+sqisign-blockchain-test = ["paqus/sqisign-blockchain-test", "wallet-core/sqisign-blockchain-test"]
+
+[dependencies]
+argon2.workspace = true
+chacha20poly1305.workspace = true
+getrandom.workspace = true
+hex.workspace = true
+paqus.workspace = true
+paqus-app-config.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+wallet-core = { path = "../wallet-core", default-features = false }
+zeroize.workspace = true

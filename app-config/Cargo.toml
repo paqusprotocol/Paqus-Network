@@ -1,0 +1,11 @@
+[package]
+name = "paqus-app-config"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[features]
+default = ["mainnet"]
+mainnet = []
+testnet = []
+devnet = []
