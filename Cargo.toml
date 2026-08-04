@@ -20,7 +20,7 @@ getrandom = "0.3"
 hex = "0.4"
 igd-next = "0.17"
 lmdb = { package = "lmdb-rkv", version = "0.14" }
-paqus = { version = "0.2.20", default-features = false }
+paqus = "0.2.21"
 paqus-app-config = { path = "app-config", default-features = false }
 prost = "0.14"
 protoc-bin-vendored = "3"

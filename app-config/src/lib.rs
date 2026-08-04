@@ -13,12 +13,10 @@ pub const NODE_RPC_LISTEN_ADDR_ENV: &str = "PAQUS_NODE_RPC_LISTEN_ADDR";
 pub const NODE_P2P_LISTEN_ADDR_ENV: &str = "PAQUS_NODE_P2P_LISTEN_ADDR";
 pub const PUBLIC_ADDR_ENV: &str = "PAQUS_PUBLIC_ADDR";
 pub const BOOTSTRAP_PEERS_ENV: &str = "PAQUS_BOOTSTRAP_PEERS";
-
-pub const BOOTSTRAP_PEER_IPV4: &str = "182.253.148.123:5555";
-pub const BOOTSTRAP_PEER_IPV6: &str = "[2404:8000:1044:4d8:1202:b5ff:feb0:7020]:5555";
+pub const BOOTSTRAP_PEER_IPV6: &str = "[2404:8000:1044:4d8:822b:f9ff:fee2:365]:5555";
 
 #[cfg(feature = "mainnet")]
-pub const BOOTSTRAP_PEERS: &[&str] = &[BOOTSTRAP_PEER_IPV4, BOOTSTRAP_PEER_IPV6];
+pub const BOOTSTRAP_PEERS: &[&str] = &[BOOTSTRAP_PEER_IPV6];
 #[cfg(any(feature = "testnet", feature = "devnet"))]
 pub const BOOTSTRAP_PEERS: &[&str] = &[];
 
