@@ -13,7 +13,7 @@ pub const NODE_RPC_LISTEN_ADDR_ENV: &str = "PAQUS_NODE_RPC_LISTEN_ADDR";
 pub const NODE_P2P_LISTEN_ADDR_ENV: &str = "PAQUS_NODE_P2P_LISTEN_ADDR";
 pub const PUBLIC_ADDR_ENV: &str = "PAQUS_PUBLIC_ADDR";
 pub const BOOTSTRAP_PEERS_ENV: &str = "PAQUS_BOOTSTRAP_PEERS";
-pub const BOOTSTRAP_PEER_IPV6: &str = "[2404:8000:1044:4d8:e5c4:5b9:93bc:656d]:5555";
+pub const BOOTSTRAP_PEER_IPV6: &str = "192.168.18.30:5555";
 
 #[cfg(feature = "mainnet")]
 pub const BOOTSTRAP_PEERS: &[&str] = &[BOOTSTRAP_PEER_IPV6];
